@@ -1,2 +1,2 @@
-*.idea/
-/Inteligencia Aritificial/venv
+*.idea
+venv/

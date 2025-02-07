@@ -11,5 +11,15 @@ data = {
     'Ventas' : [100, 150, 200, 50]
 }
 
+diccionarioSuma = {}
 
-print(f'Ciudades: {data['Ciudad']}, Suma por ciudades: {sum(data['Ventas'])}')
+for i in range(len(data['Ciudad'])):
+    ciudad = data['Ciudad'][i]
+    ventas = data['Ventas'][i]
+    if ciudad in diccionarioSuma:
+        diccionarioSuma[ciudad] += ventas
+    else:
+        diccionarioSuma[ciudad] = ventas
+
+
+print(diccionarioSuma)
